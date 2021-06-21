@@ -23,9 +23,12 @@
     ]
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "choices.js": "^9.0.1",
+    "moment": "^2.29.1",
     "normalize.css": "^8.0.0",
-    "vue": "^2.5.16",
-    "babel-polyfill": "^6.26.0"
+    "swiper": "^6.7.0",
+    "vue": "^2.5.16"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.6",

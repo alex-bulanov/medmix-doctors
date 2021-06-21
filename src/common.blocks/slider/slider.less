@@ -1,0 +1,46 @@
+@import (reference) '../../less/variables.less';
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 38px;
+  
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  &__container {
+    overflow: hidden;
+  }
+
+  &__slide {
+    flex-shrink: 0;
+    flex-grow: 1;
+    height: 48px;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-50%);
+    background: no-repeat url('./icon-arrow.svg') center / cover;
+    cursor: pointer;
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    &--disabled {
+      opacity: 0.6;
+    }
+  }
+}
