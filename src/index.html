@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hello World</title>
+  <title>МедМикс Врачи</title>
 </head>
-<body>
 
-</body>
+<div class="holder">
+
+  <body>
+
+    <main>
+      <div class="doctors-page">
+        <div class="container">
+          <div class="filter plate">
+
+            <div class="filter__select-wrapper">
+              <div class="filter__select-block select-block select-block--location">
+                <label class="select-block__label" for="location">филиал</label>
+                <select class="select-block__select" name="location" id="location">
+                  <option value="any" id="location-any">Любой</option>
+                  <option value="virazhnaya" id="location-virazhnaya">ул. Виражная, 42</option>
+                  <option value="antonova" id="location-antonova">ул. Антонова, 18</option>
+                  <option value="ladoga" id="location-ladoga">ул. Ладожская, 162</option>
+                </select>
+              </div>
+
+              <div class="filter__select-block select-block select-block--specialization">
+                <label class="select-block__label" for="specialization">специализация</label>
+                <select class="select-block__select" name="specialization" id="specialization">
+                  <option value="any-one" id="location-any-one">Любая</option>
+                  <option value="obstetrics-and-gynecology" id="location-obstetrics-and-gynecology">Акушерство и
+                    гинекология</option>
+                  <option value="allergology-and-immunology" id="location-allergology-and-immunology">Аллергология и
+                    иммунология</option>
+                  <option value="gastroenterology" id="location-gastroenterology">Гастроэнтерология</option>
+                  <option value="dermatovenerology" id="location-dermatovenerology">Дерматовенерология</option>
+                  <option value="pediatric-neurology" id="location-pediatric-neurology">Детская неврология</option>
+                  <option value="pediatric-surgery" id="location-pediatric-surgery">Детская хирургия</option>
+                  <option value="pediatric-cardiologist" id="location-pediatric-cardiologist">Детский кардиолог</option>
+                  <option value="infectious-diseases" id="location-infectious-diseases">Инфекционные болезни</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="filter__calendar-wrapper">
+              <div class="slider calendar">
+                <div class="slider__container swiper-container">
+                  <div class="slider__wrapper"></div>
+                </div>
+                <div class="slider__button slider__button--prev" aria-label="предыдущий слайд"></div>
+                <div class="slider__button slider__button--next" aria-label="следующий слайд"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="doctors-page__cards">
+            <div class="doctors-page__doctor-card doctor-card plate">
+              <div class="doctor-card__img-wrapper">
+                <a class="doctor-card__link" href="#">
+                  <picture>
+                    <img class="doctor-card__img" src="./common.blocks/doctor-card/doctor-card.jpg" width="96"
+                      height="96" alt="Доктор Корнаухова Елена Викторовна">
+                  </picture>
+                </a>
+              </div>
+              <a class="doctor-card__link" href="#">
+                <h3 class="doctor-card__title">Корнаухова Елена Викторовна</h3>
+              </a>
+              <p class="doctor-card__desc">Акушер-гинеколог, врач УЗИ</p>
+              <p class="doctor-card__location">
+                <svg>
+                  <use xlink:href="#icon-location"></use>
+                </svg>
+                Медмикс на Виражной
+              </p>
+              <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
+              <button class="doctor-card__btn btn">Записаться</button>
+
+              <div class="doctor-card__reception-hours">
+                <div class="reception-hours">
+                  <ul class="reception-hours__list list-reset">
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="08:00"
+                        id="times-101">
+                      <label class="reception-hours__label" for="times-101">08:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="09:00"
+                        id="times-102">
+                      <label class="reception-hours__label" for="times-102">09:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="10:00"
+                        id="times-103" disabled>
+                      <label class="reception-hours__label" for="times-103">10:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="11:00"
+                        id="times-104" checked>
+                      <label class="reception-hours__label" for="times-104">11:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="12:00"
+                        id="times-105">
+                      <label class="reception-hours__label" for="times-105">12:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="13:00"
+                        id="times-106" disabled>
+                      <label class="reception-hours__label" for="times-106">13:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="14:00"
+                        id="times-107">
+                      <label class="reception-hours__label" for="times-107">14:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="15:00"
+                        id="times-108">
+                      <label class="reception-hours__label" for="times-108">15:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="16:00"
+                        id="times-109" disabled>
+                      <label class="reception-hours__label" for="times-109">16:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="17:00"
+                        id="times-110">
+                      <label class="reception-hours__label" for="times-110">17:00</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</div>
+
 </html>
