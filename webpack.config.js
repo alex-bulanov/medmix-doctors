@@ -118,7 +118,7 @@ module.exports = {
           outputPath: 'img/',
         },
       },
-      'img-loader',
+        'img-loader',
       ],
 
     },
@@ -135,7 +135,7 @@ module.exports = {
           outputPath: 'img/',
         },
       },
-      'img-loader',
+        'img-loader',
       ],
 
     },
@@ -237,12 +237,12 @@ module.exports = {
       // chunks: ['vendor', 'common'],
     }),
     // для добавления отдельной html страницы нужно подключить новый HtmlWebpackPlugin
-    /* new HtmlWebpackPlugin({
-      template: 'src/test.html',
-      filename: 'test.html',
+    new HtmlWebpackPlugin({
+      template: 'src/doctor-page.html',
+      filename: 'doctor-page.html',
       // chunksSortMode: 'manual',
       // chunks: ['vendor', 'common'],
-    }), */
+    }),
   ],
 };
 
