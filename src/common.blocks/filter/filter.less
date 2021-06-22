@@ -1,15 +1,32 @@
+@import (reference) '../../less/variables.less';
+
 .filter {
   &__select-wrapper {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 24px;
+
+    @media screen and (min-width: @tablet-width) {
+      gap: 16px;
+      flex-wrap: nowrap;
+    }
   }
 
   &__select-block {
     margin-bottom: 16px;
 
+    @media screen and (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+
     &:last-of-type {
       margin-bottom: 0;
+    }
+  }
+
+  &.plate {
+    @media screen and (min-width: @tablet-width) {
+      padding: 16px 24px;
     }
   }
 }
