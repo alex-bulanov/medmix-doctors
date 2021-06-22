@@ -17,6 +17,14 @@
                          "area-3 area-3";
   }
 
+  @media screen and (min-width: @desktop-width) {
+    display: grid;
+    gap: 48px;
+    grid-template-columns: 216px 378px auto;
+    grid-template-rows: auto;
+    grid-template-areas: "area-1 area-2 area-3";
+  }
+
 
   &__img-wrapper {
     margin: 0 auto 8px;
@@ -25,6 +33,10 @@
       margin: 0;
       width: 100%;
       height: 100%;
+    }
+
+    @media screen and (min-width: @desktop-width) {
+      grid-area: area-1;
     }
   }
 
@@ -49,6 +61,10 @@
       display: flex;
       flex-direction: column;
       padding-top: 1px;
+    }
+
+    @media screen and (min-width: @desktop-width) {
+      grid-area: area-2;
     }
   }
 
@@ -105,6 +121,12 @@
       width: 100%;
       grid-area: area-3;
       padding: 0 16px;
+    }
+
+    @media screen and (min-width: @desktop-width) {
+      grid-area: area-3;
+      padding-left: 54px;
+      align-self: center;
     }
   }
 }
