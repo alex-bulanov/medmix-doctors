@@ -1,36 +1,110 @@
-.doctors-page {
+@import (reference) '../../less/variables.less';
 
+.doctors-page {
   &__cards {
     padding: 24px 0;
   }
 }
 
 .doctors-page .doctor-card {
+
+  @media screen and (min-width: @tablet-width) {
+    display: grid;
+    gap: 40px 48px;
+    grid-template-columns: 216px auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "area-1 area-2"
+                         "area-3 area-3";
+  }
+
+
   &__img-wrapper {
     margin: 0 auto 8px;
+
+    @media screen and (min-width: @tablet-width) {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__link {
+    display: flex;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: @tablet-width) {
+      width: 100%;
+      height: 100%;
+    }
+
+    &--img {
+      @media screen and (min-width: @tablet-width) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__container {
+    @media screen and (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1px;
+    }
   }
 
   &__title {
-    margin: 0 auto 8px;
     text-align: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: @tablet-width) {
+      margin: 0;
+      text-align: left;
+    }
   }
 
   &__desc {
     margin: 0 auto 16px;
     text-align: center;
+
+    @media screen and (min-width: @tablet-width) {
+      margin: 0 0 15px;
+      text-align: left;
+    }
   }
 
   &__location {
     margin-bottom: 16px;
+
+    @media screen and (min-width: @tablet-width) {
+      justify-content: flex-start;
+    }
   }
 
   &__amount {
     margin-bottom: 16px;
     text-align: center;
+
+    @media screen and (min-width: @tablet-width) {
+      text-align: left;
+    }
   }
 
   &__btn {
     width: 100%;
     margin-bottom: 40px;
+
+    @media screen and (min-width: @tablet-width) {
+      width: 128px;
+      margin: 0;
+    }
+  }
+
+  &__reception-hours {
+
+    @media screen and (min-width: @tablet-width) {
+      width: 100%;
+      grid-area: area-3;
+      padding: 0 16px;
+    }
   }
 }

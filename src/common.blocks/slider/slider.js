@@ -1,5 +1,6 @@
+/* eslint-disable */
+
 import { Swiper, Navigation } from 'swiper';
-// import 'swiper/swiper-bundle.css';
 import Calendar from '../calendar/Сalendar';
 
 Swiper.use([Navigation]);
@@ -39,6 +40,12 @@ const swiper = new Swiper('.slider__container', {
     nextEl: '.slider__button--next',
     prevEl: '.slider__button--prev',
     disabledClass: 'slider__button--disabled',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 24,
+    },
   },
 });
 
