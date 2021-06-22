@@ -1,0 +1,25 @@
+@import (reference) '../../less/variables.less';
+
+.breadcrumbs {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    font-weight: 500;
+
+    &:not(:last-of-type)&::after {
+      content: ">";
+      margin: 0 8px;
+    }
+  }
+
+  &__link {
+    display: flex;
+  }
+}

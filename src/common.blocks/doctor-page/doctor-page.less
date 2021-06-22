@@ -1,0 +1,90 @@
+@import (reference) '../../less/variables.less';
+
+.doctor-page {
+  
+  &__hero {
+    padding: 24px 0 40px;
+    background-color: @color-bg-hero;
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 24px;
+  }
+}
+
+
+.doctor-page .doctor-card {
+
+  &__img-wrapper {
+    margin: 0 auto 24px;
+
+    @media screen and (min-width: @tablet-width) {
+      margin: 0;
+    }
+
+    @media screen and (min-width: @desktop-width) {
+      // grid-area: area-1;
+    }
+  }
+
+  &__link {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  &__link--img {
+    width: 60.07%;
+    max-width: 266px;
+    max-height: 266px;
+    margin: 0 auto;
+  }
+
+  &__container {
+    margin-bottom: 15px;
+    @media screen and (min-width: @tablet-width) {
+      // display: flex;
+      //flex-direction: column;
+    }
+
+    @media screen and (min-width: @desktop-width) {
+      // grid-area: area-2;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 auto;  
+
+    @media screen and (min-width: @tablet-width) {
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 32px;
+    line-height: 18px;
+  }
+
+  &__location {
+    margin-bottom: 18px;
+    padding-bottom: 24px;
+    font-size: 13px;
+  }
+
+  &__amount {
+    margin-bottom: 17px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  &__btn {
+    display: block;
+    width: 207px;
+    margin: 0 auto;
+  }
+
+  &__calendar {
+    margin-bottom: 24px;
+  }
+}
