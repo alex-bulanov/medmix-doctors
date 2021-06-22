@@ -14,8 +14,179 @@
 
     <main>
       <div class="doctor-page">
-        <div class="container">
+        <div class="doctor-page__hero">
+          <div class="container">
+            <div class="doctor-page__breadcrumbs breadcrumbs">
+              <ul class="breadcrumbs__list list-reset">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link">Врачи</a>
+                </li>
+              </ul>
+            </div>
 
+            <div class="doctor-page__doctor-card doctor-card">
+              <div class="doctor-card__img-wrapper">
+                <a class="doctor-card__link doctor-card__link--img" href="doctor-page.html">
+                  <picture>
+                    <img class="doctor-card__img" src="./common.blocks/doctor-card/doctor-card.jpg" width="173"
+                      height="173" alt="Доктор Корнаухова Елена Викторовна">
+                  </picture>
+                </a>
+              </div>
+              <div class="doctor-card__container">
+                <a class="doctor-card__link" href="doctor-page.html">
+                  <h3 class="doctor-card__title">Корнаухова <br> Елена Викторовна</h3>
+                </a>
+                <p class="doctor-card__desc">Врач акушер-гинеколог первой категории (Выписка из приказа Минздрава
+                  Пензенской области № 128 от 04.05.2017).
+                  Осуществляет прием и наблюдение беременных, гинекологических больных, включая эндокринную <br>
+                  патологию(гинеколог-эндокринолог), диагностика и лечение заболеваний шейки матки.</p>
+                <p class="doctor-card__location">
+                  <svg>
+                    <use xlink:href="#icon-location"></use>
+                  </svg>
+                  Медмикс на Виражной, 42
+                </p>
+                <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
+                <button class="doctor-card__btn btn" id="btn-doctor-100">Записаться</button>
+              </div>
+              <div class="doctor-card__calendar">
+                <div class="slider calendar">
+                  <div class="slider__container swiper-container">
+                    <div class="slider__wrapper"></div>
+                  </div>
+                  <div class="slider__button slider__button--prev" aria-label="предыдущий слайд"></div>
+                  <div class="slider__button slider__button--next" aria-label="следующий слайд"></div>
+                </div>
+              </div>
+              <div class="doctor-card__reception-hours">
+                <div class="reception-hours">
+                  <ul class="reception-hours__list list-reset">
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="08:00"
+                        id="times-101">
+                      <label class="reception-hours__label" for="times-101">08:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="09:00"
+                        id="times-102">
+                      <label class="reception-hours__label" for="times-102">09:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="10:00"
+                        id="times-103" disabled>
+                      <label class="reception-hours__label" for="times-103">10:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="11:00"
+                        id="times-104" checked>
+                      <label class="reception-hours__label" for="times-104">11:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="12:00"
+                        id="times-105">
+                      <label class="reception-hours__label" for="times-105">12:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="13:00"
+                        id="times-106" disabled>
+                      <label class="reception-hours__label" for="times-106">13:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="14:00"
+                        id="times-107">
+                      <label class="reception-hours__label" for="times-107">14:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="15:00"
+                        id="times-108">
+                      <label class="reception-hours__label" for="times-108">15:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="16:00"
+                        id="times-109" disabled>
+                      <label class="reception-hours__label" for="times-109">16:00</label>
+                    </li>
+                    <li class="reception-hours__item">
+                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="17:00"
+                        id="times-110">
+                      <label class="reception-hours__label" for="times-110">17:00</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="container">
+          <div class="tabs">
+            <div class="tabs__triggers">
+              <a href="#tab-1" class="tabs__triggers-item">Образование</a>
+              <a href="#tab-2" class="tabs__triggers-item">Опыт работы</a>
+              <a href="#tab-2" class="tabs__triggers-item">Достижения</a>
+              <a href="#tab-2" class="tabs__triggers-item">Отзывы</a>
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__content-item" id="tab-1">
+                <p>В 2004 году окончила Cамарский государственный медицинский университет по специальности «Лечебное
+                  дело» (Диплом ВСБ №
+                  0723475 от 24.06.2004).</p>
+                <p>В 2005 окончила интернатуру в Пензенском институте усовершенствования врачей по специальности
+                  "Акушерство и гинекология"
+                  (Удостоверение № 3 от 30.06.2005).</p>
+                <p>В июне 2008 года прошла повышение квалификации в медицинском институте КГУ по программе «Основы
+                  кольпоскопии».</p>
+                <p>В 2010 году повышение квалификации в ГОУ ДПО "Пензенский институт усовершенствования врачей" по
+                  программе "Акушерство и
+                  гинекология".</p>
+                <p>В 2012 г. прошла профессиональную переподготовку в ГБОУ ДПО ПИУВ по программе «Ультразвуковая
+                  диагностика» (Диплом о
+                  профессиональной переподготовке ПП-I № 941462 от 19.12.2012).</p>
+                <p>В 2015 г. прошла повышение квалификации в ГБОУ ДПО "Пензенский институт усовершенствования врачей" по
+                  программе
+                  "Акушерство и гинекология" (Удостоверение о повышении квалификации № 582402390213 от 10.06.2015).
+                  Имеет сертификат
+                  специалиста (№ 0358240421748 от 10.06.2015) по специальности "Акушерство и гинекология", действителен
+                  до 10.06.2020.</p>
+                <p>В 2017 г. прошла повышение квалификации в ПИУВ - филиал ФГБОУ ДПО "Российская медицинская академия
+                  непрерывного
+                  профессионального образования" по программе "Ультразвуковая диагностика" (Удостоверение о повышении
+                  квалифкации №
+                  180001368286 от 17.05.2017). Имеет сертификат специалиста (№ 0377180751158 от 17.05.2017) по
+                  специальности
+                  "Ультразвуковая диагностика", действителен до 17.05.2022.</p>
+                <p>В 2020 г. прошла повышение квалификации в ПИУВ - филиал ФГБОУ ДПО "Российская медицинская академия
+                  непрерывного
+                  профессионального образования" по программе "Акушерство и гинекология" (Удостоверение о повышении
+                  квалификации №
+                  582700021642 от 27.04.2020). Имеет сертификат специалиста (№ 0358310496783 от 13.10.2020) по
+                  специальности "Акушерство и
+                  гинекология", действителен до 13.10.2025.</p>
+              </div>
+              <div class="tabs__content-item" id="tab-2">
+                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Выйти вершину
+                  своих имени строчка предупредила текст правилами деревни предложения инициал, ручеек бросил буквоград
+                  ему всемогущая lorem коварных большого которое рыбного мир несколько осталось своего то власти.
+                  Подзаголовок, ее знаках!</p>
+              </div>
+              <div class="tabs__content-item" id="tab-3">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предложения строчка
+                пояс образ, она буквенных безопасную раз сбить лучше до заглавных бросил, собрал осталось, снова мир
+                выйти вершину свой запятых если вопроса продолжил рукопись повстречался рыбными? Своего, собрал выйти.
+              </div>
+              <div class="tabs__content-item" id="tab-4">
+                Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Но переписывается
+                то продолжил. Это себя, lorem залетают власти которой ее знаках одна журчит родного, она пустился
+                осталось если его переписали, реторический решила встретил жизни использовало образ. Которое, курсивных
+                букв?
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
