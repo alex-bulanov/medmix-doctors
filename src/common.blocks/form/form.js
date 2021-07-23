@@ -1,18 +1,5 @@
 import popupOpen from '../popup/popup';
 
-const inputs = document.querySelectorAll('.form__input');
-
-inputs.forEach((input) => {
-  input.addEventListener('change', () => {
-    if (input.value.trim().length < 1) {
-      input.value = null;
-      input.classList.remove('form__input--filled');
-    } else {
-      input.classList.add('form__input--filled');
-    }
-  });
-});
-
 $(() => {
   $('#popup-from').on('submit', (event) => {
     event.preventDefault();
