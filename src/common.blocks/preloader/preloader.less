@@ -1,12 +1,18 @@
 @import (reference) '../../less/variables.less';
 
 .preloader {
+	position: relative;
 	width: 100%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: @color-white;
+
+	&::after {
+		content: "";
+		padding-top: 100%;
+	}
 }
 
 .preloader__container {
