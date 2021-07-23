@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <title>МедМикс Врачи</title>
 </head>
 
@@ -80,7 +81,7 @@
                   Медмикс на Виражной
                 </p>
                 <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
-                <button class="doctor-card__btn btn" id="btn-doctor-100">Записаться</button>
+                <a class="doctor-card__btn btn popup-link" href="popup-1">Записаться</a>
               </div>
               <div class="doctor-card__reception-hours">
                 <div class="reception-hours">
@@ -161,7 +162,7 @@
                   Медмикс на Виражной
                 </p>
                 <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
-                <button class="doctor-card__btn btn" id="btn-doctor-200">Записаться</button>
+                <a class="doctor-card__btn btn popup-link" href="popup-1">Записаться</a>
               </div>
               <div class="doctor-card__reception-hours">
                 <div class="reception-hours">
@@ -242,7 +243,7 @@
                   Медмикс на Виражной
                 </p>
                 <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
-                <button class="doctor-card__btn btn" id="btn-doctor-200">Записаться</button>
+                <a class="doctor-card__btn btn popup-link" href="popup-1">Записаться</a>
               </div>
               <div class="doctor-card__reception-hours">
                 <div class="reception-hours">
@@ -323,7 +324,7 @@
                   Медмикс на Виражной
                 </p>
                 <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
-                <button class="doctor-card__btn btn" id="btn-doctor-200">Записаться</button>
+                <a class="doctor-card__btn btn popup-link" href="popup-1">Записаться</a>
               </div>
               <div class="doctor-card__reception-hours">
                 <div class="reception-hours">
@@ -387,6 +388,9 @@
         </div>
       </div>
     </main>
+
+
+    ${require('./common.blocks/popup/popup.html')}
 
   </body>
 </div>

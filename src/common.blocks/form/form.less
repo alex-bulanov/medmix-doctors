@@ -1,0 +1,126 @@
+@import (reference) '../../less/variables.less';
+
+.form {
+
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    &:last-of-type {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__label {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: @tablet-width) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__input {
+    appearance: none;
+    border: 1px solid @color-border;
+    padding: 11px 7px 9px;
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    color: @color-text;
+    background-color: @color-white;
+  }
+
+  &__input::-webkit-input-placeholder {
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    color: @color-text-secondary;
+  }
+
+  &__input::-moz-placeholder {
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    color: @color-text-secondary;
+  }
+
+  &__input:-moz-placeholder {
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    color: @color-text-secondary;
+  }
+
+  &__input:-ms-input-placeholder {
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    color: @color-text-secondary;
+  }
+
+  &__input:-webkit-autofill,
+  &__input:-webkit-autofill:hover,
+  &__input:-webkit-autofill:active,
+  &__input:-webkit-autofill:focus {
+    background-color: @color-white !important;
+    color: @color-text !important;
+    box-shadow: 0 0 0 1000px @color-white inset !important;
+    -webkit-text-fill-color: @color-text !important;
+  }
+}
+
+// error styles
+.form__input.has-error {
+  border-color: @color-main;
+  color: @color-main;
+}
+
+.form__input.has-error::-webkit-input-placeholder {
+  color: @color-main;
+}
+
+.form__input.has-error::-webkit-input-placeholder {
+  color: @color-main;
+}
+
+.form__input.has-error:-moz-placeholder {
+  color: @color-main;
+}
+
+.form__input.has-error:-ms-input-placeholder {
+  color: @color-main;
+}
+
+// success styles
+.form__input.has-success {
+  border-color: @color-success;
+  color: @color-success;
+}
+
+.form__input.has-success::-webkit-input-placeholder {
+  color: @color-success;
+}
+
+.form__input.has-success::-webkit-input-placeholder {
+  color: @color-success;
+}
+
+.form__input.has-success:-moz-placeholder {
+  color: @color-success;
+}
+
+.form__input.has-success:-ms-input-placeholder {
+  color: @color-success;
+}

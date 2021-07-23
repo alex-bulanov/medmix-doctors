@@ -51,8 +51,6 @@ const swiper = new Swiper('.slider__container', {
 
 swiper.on('slideChange', () => {
   if (swiper.realIndex > swiper.previousIndex) {
-    console.log('create');
-    console.log('swiper.previousIndex', swiper.previousIndex, 'swiper.realIndex', swiper.realIndex);
 
     swiper.appendSlide(createSlide(swiper.slides.length));
   }
