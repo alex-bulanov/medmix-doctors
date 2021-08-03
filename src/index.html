@@ -9,392 +9,393 @@
   <title>МедМикс Врачи</title>
 </head>
 
-<div class="holder">
 
-  <body>
+<body>
 
-    <main>
-      <div class="doctors-page">
-        <div class="container">
-          <div class="filter plate">
 
-            <div class="filter__select-wrapper">
-              <div class="filter__select-block select-block select-block--location">
-                <label class="select-block__label" for="location">филиал</label>
-                <select class="select-block__select" name="location" id="location">
-                  <option value="any" id="location-any">Любой</option>
-                  <option value="virazhnaya" id="location-virazhnaya">ул. Виражная, 42</option>
-                  <option value="antonova" id="location-antonova">ул. Антонова, 18</option>
-                  <option value="ladoga" id="location-ladoga">ул. Ладожская, 162</option>
-                </select>
-              </div>
-
-              <div class="filter__select-block select-block select-block--specialization">
-                <label class="select-block__label" for="specialization">специализация</label>
-                <select class="select-block__select" name="specialization" id="specialization">
-                  <option value="any-one" id="location-any-one">Любая</option>
-                  <option value="obstetrics-and-gynecology" id="location-obstetrics-and-gynecology">Акушерство и
-                    гинекология</option>
-                  <option value="allergology-and-immunology" id="location-allergology-and-immunology">Аллергология и
-                    иммунология</option>
-                  <option value="gastroenterology" id="location-gastroenterology">Гастроэнтерология</option>
-                  <option value="dermatovenerology" id="location-dermatovenerology">Дерматовенерология</option>
-                  <option value="pediatric-neurology" id="location-pediatric-neurology">Детская неврология</option>
-                  <option value="pediatric-surgery" id="location-pediatric-surgery">Детская хирургия</option>
-                  <option value="pediatric-cardiologist" id="location-pediatric-cardiologist">Детский кардиолог</option>
-                  <option value="infectious-diseases" id="location-infectious-diseases">Инфекционные болезни</option>
-                </select>
-              </div>
+  <main>
+    <div class="doctors-page">
+      <div class="container">
+        <div class="filter plate">
+          <div class="filter__select-wrapper">
+            <div class="filter__select-block select-block select-block--location">
+              <label class="select-block__label" for="location">филиал</label>
+              <select class="select-block__select" name="location" id="location">
+                <option value="any" id="location-any">Любой</option>
+                <option value="virazhnaya" id="location-virazhnaya">ул. Виражная, 42</option>
+                <option value="antonova" id="location-antonova">ул. Антонова, 18</option>
+                <option value="ladoga" id="location-ladoga">ул. Ладожская, 162</option>
+              </select>
             </div>
 
-            <div class="filter__calendar-wrapper">
-              <div class="slider calendar">
-                <div class="slider__container swiper-container">
-                  <div class="slider__wrapper"></div>
-                </div>
-                <div class="slider__button slider__button--prev" aria-label="предыдущий слайд"></div>
-                <div class="slider__button slider__button--next" aria-label="следующий слайд"></div>
-              </div>
+            <div class="filter__select-block select-block select-block--specialization">
+              <label class="select-block__label" for="specialization">специализация</label>
+              <select class="select-block__select" name="specialization" id="specialization">
+                <option value="any-one" id="location-any-one">Любая</option>
+                <option value="obstetrics-and-gynecology" id="location-obstetrics-and-gynecology">Акушерство и
+                  гинекология</option>
+                <option value="allergology-and-immunology" id="location-allergology-and-immunology">Аллергология и
+                  иммунология</option>
+                <option value="gastroenterology" id="location-gastroenterology">Гастроэнтерология</option>
+                <option value="dermatovenerology" id="location-dermatovenerology">Дерматовенерология</option>
+                <option value="pediatric-neurology" id="location-pediatric-neurology">Детская неврология</option>
+                <option value="pediatric-surgery" id="location-pediatric-surgery">Детская хирургия</option>
+                <option value="pediatric-cardiologist" id="location-pediatric-cardiologist">Детский кардиолог</option>
+                <option value="infectious-diseases" id="location-infectious-diseases">Инфекционные болезни</option>
+              </select>
             </div>
           </div>
 
-          <div class="doctors-page__cards">
-
-            <div class="doctors-page__doctor-card doctor-card plate" id="doctor-100">
-              <div class="doctor-card__img-wrapper">
-                <a class="doctor-card__link doctor-card__link--img" href="doctor-page.html">
-                  <picture>
-                    <img class="doctor-card__img" src="./common.blocks/doctor-card/doctor-card.jpg" width="96"
-                      height="96" alt="Доктор Корнаухова Елена Викторовна">
-                  </picture>
-                </a>
+          <div class="filter__calendar-wrapper">
+            <div class="slider calendar">
+              <div class="slider__container swiper-container">
+                <div class="slider__wrapper"></div>
               </div>
-              <div class="doctor-card__container">
-                <a class="doctor-card__link" href="doctor-page.html">
-                  <h3 class="doctor-card__title">Корнаухова Елена Викторовна</h3>
-                </a>
-                <p class="doctor-card__desc">Акушер-гинеколог, врач УЗИ</p>
-                <p class="doctor-card__location">
-                  <svg>
-                    <use xlink:href="#icon-location"></use>
-                  </svg>
-                  Медмикс на Виражной
-                </p>
-                <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
-                <a class="doctor-card__btn btn popup-link" href="popup-1">Записаться</a>
-              </div>
-              <div class="doctor-card__reception-hours">
-                <div class="reception-hours">
-                  <ul class="reception-hours__list list-reset">
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="08:00"
-                        id="times-101">
-                      <label class="reception-hours__label" for="times-101">08:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="09:00"
-                        id="times-102">
-                      <label class="reception-hours__label" for="times-102">09:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="10:00"
-                        id="times-103" disabled>
-                      <label class="reception-hours__label" for="times-103">10:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="11:00"
-                        id="times-104" checked>
-                      <label class="reception-hours__label" for="times-104">11:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="12:00"
-                        id="times-105">
-                      <label class="reception-hours__label" for="times-105">12:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="13:00"
-                        id="times-106" disabled>
-                      <label class="reception-hours__label" for="times-106">13:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="14:00"
-                        id="times-107">
-                      <label class="reception-hours__label" for="times-107">14:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="15:00"
-                        id="times-108">
-                      <label class="reception-hours__label" for="times-108">15:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="16:00"
-                        id="times-109" disabled>
-                      <label class="reception-hours__label" for="times-109">16:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="17:00"
-                        id="times-110">
-                      <label class="reception-hours__label" for="times-110">17:00</label>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <div class="slider__button slider__button--prev" aria-label="предыдущий слайд"></div>
+              <div class="slider__button slider__button--next" aria-label="следующий слайд"></div>
             </div>
-
-            <div class="doctors-page__doctor-card doctor-card plate" id="doctor-200">
-              <div class="doctor-card__img-wrapper">
-                <a class="doctor-card__link doctor-card__link--img" href="doctor-page.html">
-                  <picture>
-                    <img class="doctor-card__img" src="./common.blocks/doctor-card/doctor-card.jpg" width="96"
-                      height="96" alt="Доктор Корнаухова Елена Викторовна">
-                  </picture>
-                </a>
-              </div>
-              <div class="doctor-card__container">
-                <a class="doctor-card__link" href="doctor-page.html">
-                  <h3 class="doctor-card__title">Корнаухова Елена Викторовна</h3>
-                </a>
-                <p class="doctor-card__desc">Акушер-гинеколог, врач УЗИ</p>
-                <p class="doctor-card__location">
-                  <svg>
-                    <use xlink:href="#icon-location"></use>
-                  </svg>
-                  Медмикс на Виражной
-                </p>
-                <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
-                <a class="doctor-card__btn btn popup-link" href="popup-1">Записаться</a>
-              </div>
-              <div class="doctor-card__reception-hours">
-                <div class="reception-hours">
-                  <ul class="reception-hours__list list-reset">
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="08:00"
-                        id="times-201">
-                      <label class="reception-hours__label" for="times-201">08:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="09:00"
-                        id="times-202">
-                      <label class="reception-hours__label" for="times-202">09:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="10:00"
-                        id="times-203" disabled>
-                      <label class="reception-hours__label" for="times-203">10:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="11:00"
-                        id="times-204" checked>
-                      <label class="reception-hours__label" for="times-204">11:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="12:00"
-                        id="times-205">
-                      <label class="reception-hours__label" for="times-205">12:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="13:00"
-                        id="times-206" disabled>
-                      <label class="reception-hours__label" for="times-206">13:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="14:00"
-                        id="times-207">
-                      <label class="reception-hours__label" for="times-207">14:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="15:00"
-                        id="times-208">
-                      <label class="reception-hours__label" for="times-208">15:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="16:00"
-                        id="times-209" disabled>
-                      <label class="reception-hours__label" for="times-209">16:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="17:00"
-                        id="times-210">
-                      <label class="reception-hours__label" for="times-210">17:00</label>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="doctors-page__doctor-card doctor-card plate" id="doctor-300">
-              <div class="doctor-card__img-wrapper">
-                <a class="doctor-card__link doctor-card__link--img" href="doctor-page.html">
-                  <picture>
-                    <img class="doctor-card__img" src="./common.blocks/doctor-card/doctor-card.jpg" width="96"
-                      height="96" alt="Доктор Корнаухова Елена Викторовна">
-                  </picture>
-                </a>
-              </div>
-              <div class="doctor-card__container">
-                <a class="doctor-card__link" href="doctor-page.html">
-                  <h3 class="doctor-card__title">Корнаухова Елена Викторовна</h3>
-                </a>
-                <p class="doctor-card__desc">Акушер-гинеколог, врач УЗИ</p>
-                <p class="doctor-card__location">
-                  <svg>
-                    <use xlink:href="#icon-location"></use>
-                  </svg>
-                  Медмикс на Виражной
-                </p>
-                <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
-                <a class="doctor-card__btn btn popup-link" href="popup-1">Записаться</a>
-              </div>
-              <div class="doctor-card__reception-hours">
-                <div class="reception-hours">
-                  <ul class="reception-hours__list list-reset">
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="08:00"
-                        id="times-301">
-                      <label class="reception-hours__label" for="times-301">08:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="09:00"
-                        id="times-302">
-                      <label class="reception-hours__label" for="times-302">09:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="10:00"
-                        id="times-303" disabled>
-                      <label class="reception-hours__label" for="times-303">10:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="11:00"
-                        id="times-304" checked>
-                      <label class="reception-hours__label" for="times-304">11:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="12:00"
-                        id="times-305">
-                      <label class="reception-hours__label" for="times-305">12:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="13:00"
-                        id="times-306" disabled>
-                      <label class="reception-hours__label" for="times-306">13:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="14:00"
-                        id="times-307">
-                      <label class="reception-hours__label" for="times-307">14:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="15:00"
-                        id="times-308">
-                      <label class="reception-hours__label" for="times-308">15:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="16:00"
-                        id="times-309" disabled>
-                      <label class="reception-hours__label" for="times-309">16:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="17:00"
-                        id="times-310">
-                      <label class="reception-hours__label" for="times-310">17:00</label>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="doctors-page__doctor-card doctor-card plate" id="doctor-400">
-              <div class="doctor-card__img-wrapper">
-                <a class="doctor-card__link doctor-card__link--img" href="doctor-page.html">
-                  <picture>
-                    <img class="doctor-card__img" src="./common.blocks/doctor-card/doctor-card.jpg" width="96"
-                      height="96" alt="Доктор Корнаухова Елена Викторовна">
-                  </picture>
-                </a>
-              </div>
-              <div class="doctor-card__container">
-                <a class="doctor-card__link" href="doctor-page.html">
-                  <h3 class="doctor-card__title">Корнаухова Елена Викторовна</h3>
-                </a>
-                <p class="doctor-card__desc">Акушер-гинеколог, врач УЗИ</p>
-                <p class="doctor-card__location">
-                  <svg>
-                    <use xlink:href="#icon-location"></use>
-                  </svg>
-                  Медмикс на Виражной
-                </p>
-                <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
-                <a class="doctor-card__btn btn popup-link" href="popup-1">Записаться</a>
-              </div>
-              <div class="doctor-card__reception-hours">
-                <div class="reception-hours">
-                  <ul class="reception-hours__list list-reset">
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="08:00"
-                        id="times-401">
-                      <label class="reception-hours__label" for="times-401">08:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="09:00"
-                        id="times-402">
-                      <label class="reception-hours__label" for="times-402">09:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="10:00"
-                        id="times-403" disabled>
-                      <label class="reception-hours__label" for="times-403">10:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="11:00"
-                        id="times-404" checked>
-                      <label class="reception-hours__label" for="times-404">11:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="12:00"
-                        id="times-405">
-                      <label class="reception-hours__label" for="times-405">12:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="13:00"
-                        id="times-406" disabled>
-                      <label class="reception-hours__label" for="times-406">13:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="14:00"
-                        id="times-407">
-                      <label class="reception-hours__label" for="times-407">14:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="15:00"
-                        id="times-408">
-                      <label class="reception-hours__label" for="times-408">15:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="16:00"
-                        id="times-409" disabled>
-                      <label class="reception-hours__label" for="times-409">16:00</label>
-                    </li>
-                    <li class="reception-hours__item">
-                      <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="17:00"
-                        id="times-410">
-                      <label class="reception-hours__label" for="times-410">17:00</label>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
           </div>
-
-          ${require('./common.blocks/preloader/preloader.html')}
         </div>
+
+        <div class="doctors-page__cards">
+
+          <div class="doctors-page__doctor-card doctor-card plate" id="doctor-100">
+            <div class="doctor-card__img-wrapper">
+              <a class="doctor-card__link doctor-card__link--img" href="doctor-page.html">
+                <picture>
+                  <img class="doctor-card__img" src="./common.blocks/doctor-card/doctor-card.jpg" width="96" height="96"
+                    alt="Доктор Корнаухова Елена Викторовна">
+                </picture>
+              </a>
+            </div>
+            <div class="doctor-card__container">
+              <a class="doctor-card__link" href="doctor-page.html">
+                <h3 class="doctor-card__title">Корнаухова Елена Викторовна</h3>
+              </a>
+              <p class="doctor-card__desc">Акушер-гинеколог, врач УЗИ</p>
+              <p class="doctor-card__location">
+                <svg>
+                  <use xlink:href="#icon-location"></use>
+                </svg>
+                Медмикс на Виражной
+              </p>
+              <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
+              <a class="doctor-card__btn btn popup-link" href="popup-1">Записаться</a>
+            </div>
+            <div class="doctor-card__reception-hours">
+              <div class="reception-hours">
+                <ul class="reception-hours__list list-reset">
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="08:00"
+                      id="times-101">
+                    <label class="reception-hours__label" for="times-101">08:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="09:00"
+                      id="times-102">
+                    <label class="reception-hours__label" for="times-102">09:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="10:00"
+                      id="times-103" disabled>
+                    <label class="reception-hours__label" for="times-103">10:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="11:00"
+                      id="times-104" checked>
+                    <label class="reception-hours__label" for="times-104">11:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="12:00"
+                      id="times-105">
+                    <label class="reception-hours__label" for="times-105">12:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="13:00"
+                      id="times-106" disabled>
+                    <label class="reception-hours__label" for="times-106">13:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="14:00"
+                      id="times-107">
+                    <label class="reception-hours__label" for="times-107">14:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="15:00"
+                      id="times-108">
+                    <label class="reception-hours__label" for="times-108">15:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="16:00"
+                      id="times-109" disabled>
+                    <label class="reception-hours__label" for="times-109">16:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="17:00"
+                      id="times-110">
+                    <label class="reception-hours__label" for="times-110">17:00</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctors-page__doctor-card doctor-card plate" id="doctor-200">
+            <div class="doctor-card__img-wrapper">
+              <a class="doctor-card__link doctor-card__link--img" href="doctor-page.html">
+                <picture>
+                  <img class="doctor-card__img" src="./common.blocks/doctor-card/doctor-card.jpg" width="96" height="96"
+                    alt="Доктор Корнаухова Елена Викторовна">
+                </picture>
+              </a>
+            </div>
+            <div class="doctor-card__container">
+              <a class="doctor-card__link" href="doctor-page.html">
+                <h3 class="doctor-card__title">Корнаухова Елена Викторовна</h3>
+              </a>
+              <p class="doctor-card__desc">Акушер-гинеколог, врач УЗИ</p>
+              <p class="doctor-card__location">
+                <svg>
+                  <use xlink:href="#icon-location"></use>
+                </svg>
+                Медмикс на Виражной
+              </p>
+              <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
+              <a class="doctor-card__btn btn popup-link" href="popup-1">Записаться</a>
+            </div>
+            <div class="doctor-card__reception-hours">
+              <div class="reception-hours">
+                <ul class="reception-hours__list list-reset">
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="08:00"
+                      id="times-201">
+                    <label class="reception-hours__label" for="times-201">08:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="09:00"
+                      id="times-202">
+                    <label class="reception-hours__label" for="times-202">09:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="10:00"
+                      id="times-203" disabled>
+                    <label class="reception-hours__label" for="times-203">10:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="11:00"
+                      id="times-204" checked>
+                    <label class="reception-hours__label" for="times-204">11:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="12:00"
+                      id="times-205">
+                    <label class="reception-hours__label" for="times-205">12:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="13:00"
+                      id="times-206" disabled>
+                    <label class="reception-hours__label" for="times-206">13:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="14:00"
+                      id="times-207">
+                    <label class="reception-hours__label" for="times-207">14:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="15:00"
+                      id="times-208">
+                    <label class="reception-hours__label" for="times-208">15:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="16:00"
+                      id="times-209" disabled>
+                    <label class="reception-hours__label" for="times-209">16:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="17:00"
+                      id="times-210">
+                    <label class="reception-hours__label" for="times-210">17:00</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctors-page__doctor-card doctor-card plate" id="doctor-300">
+            <div class="doctor-card__img-wrapper">
+              <a class="doctor-card__link doctor-card__link--img" href="doctor-page.html">
+                <picture>
+                  <img class="doctor-card__img" src="./common.blocks/doctor-card/doctor-card.jpg" width="96" height="96"
+                    alt="Доктор Корнаухова Елена Викторовна">
+                </picture>
+              </a>
+            </div>
+            <div class="doctor-card__container">
+              <a class="doctor-card__link" href="doctor-page.html">
+                <h3 class="doctor-card__title">Корнаухова Елена Викторовна</h3>
+              </a>
+              <p class="doctor-card__desc">Акушер-гинеколог, врач УЗИ</p>
+              <p class="doctor-card__location">
+                <svg>
+                  <use xlink:href="#icon-location"></use>
+                </svg>
+                Медмикс на Виражной
+              </p>
+              <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
+              <a class="doctor-card__btn btn popup-link" href="popup-1">Записаться</a>
+            </div>
+            <div class="doctor-card__reception-hours">
+              <div class="reception-hours">
+                <ul class="reception-hours__list list-reset">
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="08:00"
+                      id="times-301">
+                    <label class="reception-hours__label" for="times-301">08:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="09:00"
+                      id="times-302">
+                    <label class="reception-hours__label" for="times-302">09:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="10:00"
+                      id="times-303" disabled>
+                    <label class="reception-hours__label" for="times-303">10:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="11:00"
+                      id="times-304" checked>
+                    <label class="reception-hours__label" for="times-304">11:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="12:00"
+                      id="times-305">
+                    <label class="reception-hours__label" for="times-305">12:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="13:00"
+                      id="times-306" disabled>
+                    <label class="reception-hours__label" for="times-306">13:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="14:00"
+                      id="times-307">
+                    <label class="reception-hours__label" for="times-307">14:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="15:00"
+                      id="times-308">
+                    <label class="reception-hours__label" for="times-308">15:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="16:00"
+                      id="times-309" disabled>
+                    <label class="reception-hours__label" for="times-309">16:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="17:00"
+                      id="times-310">
+                    <label class="reception-hours__label" for="times-310">17:00</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctors-page__doctor-card doctor-card plate" id="doctor-400">
+            <div class="doctor-card__img-wrapper">
+              <a class="doctor-card__link doctor-card__link--img" href="doctor-page.html">
+                <picture>
+                  <img class="doctor-card__img" src="./common.blocks/doctor-card/doctor-card.jpg" width="96" height="96"
+                    alt="Доктор Корнаухова Елена Викторовна">
+                </picture>
+              </a>
+            </div>
+            <div class="doctor-card__container">
+              <a class="doctor-card__link" href="doctor-page.html">
+                <h3 class="doctor-card__title">Корнаухова Елена Викторовна</h3>
+              </a>
+              <p class="doctor-card__desc">Акушер-гинеколог, врач УЗИ</p>
+              <p class="doctor-card__location">
+                <svg>
+                  <use xlink:href="#icon-location"></use>
+                </svg>
+                Медмикс на Виражной
+              </p>
+              <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
+              <a class="doctor-card__btn btn popup-link" href="popup-1">Записаться</a>
+            </div>
+            <div class="doctor-card__reception-hours">
+              <div class="reception-hours">
+                <ul class="reception-hours__list list-reset">
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="08:00"
+                      id="times-401">
+                    <label class="reception-hours__label" for="times-401">08:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="09:00"
+                      id="times-402">
+                    <label class="reception-hours__label" for="times-402">09:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="10:00"
+                      id="times-403" disabled>
+                    <label class="reception-hours__label" for="times-403">10:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="11:00"
+                      id="times-404" checked>
+                    <label class="reception-hours__label" for="times-404">11:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="12:00"
+                      id="times-405">
+                    <label class="reception-hours__label" for="times-405">12:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="13:00"
+                      id="times-406" disabled>
+                    <label class="reception-hours__label" for="times-406">13:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="14:00"
+                      id="times-407">
+                    <label class="reception-hours__label" for="times-407">14:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="15:00"
+                      id="times-408">
+                    <label class="reception-hours__label" for="times-408">15:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="16:00"
+                      id="times-409" disabled>
+                    <label class="reception-hours__label" for="times-409">16:00</label>
+                  </li>
+                  <li class="reception-hours__item">
+                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="17:00"
+                      id="times-410">
+                    <label class="reception-hours__label" for="times-410">17:00</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        ${require('./common.blocks/preloader/preloader.html')}
       </div>
-    </main>
+    </div>
+  </main>
 
 
-    ${require('./common.blocks/popup/popup.html')}
+  ${require('./common.blocks/popup/popup.html')}
 
-  </body>
-</div>
+
+</body>
+
+
 
 </html>
