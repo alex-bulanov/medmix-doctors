@@ -45,18 +45,11 @@
                   Пензенской области № 128 от 04.05.2017).
                   Осуществляет прием и наблюдение беременных, гинекологических больных, включая эндокринную
                   патологию(гинеколог-эндокринолог), диагностика и лечение заболеваний шейки матки.</p>
-                <p class="doctor-card__location">
-                  <svg>
-                    <use xlink:href="#icon-location"></use>
-                  </svg>
-                  Медмикс на Виражной, 42
-                </p>
-              </div>
-              <div class="doctor-card__amount-wrapper">
 
-                <p class="doctor-card__amount">Стоимость приема от 700 ₽</p>
-                <a class="doctor-card__btn btn popup-link" href="#popup-1">Записаться</a>
+                <p class="doctor-card__amount">Стоимость приема <span> от 700 ₽</span></p>
+                <a class="doctor-card__btn btn-doctors popup-link" href="#popup-1">Записаться</a>
               </div>
+
             </div>
 
             <div class="doctor-card__calendar">
@@ -69,77 +62,287 @@
               </div>
             </div>
 
-            <div class="doctor-card__reception-hours">
-              <div class="reception-hours">
-                <ul class="reception-hours__list list-reset">
-                  <li class="reception-hours__item">
-                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="08:00"
-                      id="times-101">
-                    <label class="reception-hours__label" for="times-101">08:00</label>
-                  </li>
-                  <li class="reception-hours__item">
-                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="09:00"
-                      id="times-102">
-                    <label class="reception-hours__label" for="times-102">09:00</label>
-                  </li>
-                  <li class="reception-hours__item">
-                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="10:00"
-                      id="times-103" disabled>
-                    <label class="reception-hours__label" for="times-103">10:00</label>
-                  </li>
-                  <li class="reception-hours__item">
-                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="11:00"
-                      id="times-104" checked>
-                    <label class="reception-hours__label" for="times-104">11:00</label>
-                  </li>
-                  <li class="reception-hours__item">
-                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="12:00"
-                      id="times-105">
-                    <label class="reception-hours__label" for="times-105">12:00</label>
-                  </li>
-                  <li class="reception-hours__item">
-                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="13:00"
-                      id="times-106" disabled>
-                    <label class="reception-hours__label" for="times-106">13:00</label>
-                  </li>
-                  <li class="reception-hours__item">
-                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="14:00"
-                      id="times-107">
-                    <label class="reception-hours__label" for="times-107">14:00</label>
-                  </li>
-                  <li class="reception-hours__item">
-                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="15:00"
-                      id="times-108">
-                    <label class="reception-hours__label" for="times-108">15:00</label>
-                  </li>
-                  <li class="reception-hours__item">
-                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="16:00"
-                      id="times-109" disabled>
-                    <label class="reception-hours__label" for="times-109">16:00</label>
-                  </li>
-                  <li class="reception-hours__item">
-                    <input class="reception-hours__input visually-hidden" type="radio" name="times" data-value="17:00"
-                      id="times-110">
-                    <label class="reception-hours__label" for="times-110">17:00</label>
-                  </li>
-                </ul>
+            <p class="doctor-card__tabs-slogan">Выберите филиал, чтобы узнать часы приема:</p>
+
+            <div class="doctor-card__tabs doctor-card__tabs--inner tabs">
+              <div class="doctor-card__triggers tabs__triggers">
+                <button class="doctor-card__triggers-item tabs__triggers-item" type="button">
+                  <svg class="doctor-card__triggers-icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#icon-location"></use>
+                  </svg>
+                  ул. Виражная, 42</button>
+                <button class="doctor-card__triggers-item tabs__triggers-item" type="button">
+                  <svg class="doctor-card__triggers-icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#icon-location"></use>
+                  </svg>
+                  ул. Антонова, 18</button>
+                <button class="doctor-card__triggers-item tabs__triggers-item" type="button">
+                  <svg class="doctor-card__triggers-icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#icon-location"></use>
+                  </svg>
+                  ул. Ладожская,
+                  162</button>
+              </div>
+
+              <div class="doctor-card__content tabs__content">
+                <div class="doctor-card__content-item tabs__content-item">
+                  <div class="doctor-card__reception-hours">
+                    <div class="reception-hours">
+                      <ul class="reception-hours__list list-reset">
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="08:00:00">
+                            <span class="reception-hours__caption">08:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="09:00:00">
+                            <span class="reception-hours__caption">09:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="10:00:00">
+                            <span class="reception-hours__caption">10:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="11:00:00">
+                            <span class="reception-hours__caption">11:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="12:00:00">
+                            <span class="reception-hours__caption">12:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="13:00:00">
+                            <span class="reception-hours__caption">13:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="14:00:00">
+                            <span class="reception-hours__caption">14:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="15:00:00">
+                            <span class="reception-hours__caption">15:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="16:00:00">
+                            <span class="reception-hours__caption">16:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="17:00:00">
+                            <span class="reception-hours__caption">17:00</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctor-card__content-item tabs__content-item">
+                  <!-- 2-й таб -->
+                  <div class="doctor-card__reception-hours">
+                    <div class="reception-hours">
+                      <ul class="reception-hours__list list-reset">
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="08:00:00">
+                            <span class="reception-hours__caption">08:00</span>
+                          </label>
+                        </li>
+
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="09:00:00">
+                            <span class="reception-hours__caption">09:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="10:00:00">
+                            <span class="reception-hours__caption">10:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="11:00:00">
+                            <span class="reception-hours__caption">11:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="12:00:00">
+                            <span class="reception-hours__caption">12:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="13:00:00">
+                            <span class="reception-hours__caption">13:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="14:00:00">
+                            <span class="reception-hours__caption">14:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="15:00:00">
+                            <span class="reception-hours__caption">15:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="16:00:00">
+                            <span class="reception-hours__caption">16:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="17:00:00">
+                            <span class="reception-hours__caption">17:00</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="doctor-card__content-item tabs__content-item">
+                  <!-- 3-й таб -->
+                  <div class="doctor-card__reception-hours">
+                    <div class="reception-hours">
+                      <ul class="reception-hours__list list-reset">
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="08:00:00">
+                            <span class="reception-hours__caption">08:00</span>
+                          </label>
+                        </li>
+
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="09:00:00">
+                            <span class="reception-hours__caption">09:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="10:00:00">
+                            <span class="reception-hours__caption">10:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="11:00:00">
+                            <span class="reception-hours__caption">11:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="12:00:00">
+                            <span class="reception-hours__caption">12:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="13:00:00">
+                            <span class="reception-hours__caption">13:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="14:00:00">
+                            <span class="reception-hours__caption">14:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="15:00:00">
+                            <span class="reception-hours__caption">15:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="16:00:00">
+                            <span class="reception-hours__caption">16:00</span>
+                          </label>
+                        </li>
+                        <li class="reception-hours__item">
+                          <label class="reception-hours__label">
+                            <input class="reception-hours__input visually-hidden" type="radio" name="times"
+                              data-value="17:00:00">
+                            <span class="reception-hours__caption">17:00</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-
       <div class="container">
-        <div class="tabs">
-          <div class="tabs__triggers">
-            <a href="#tab-1" class="tabs__triggers-item">Образование</a>
-            <a href="#tab-2" class="tabs__triggers-item">Опыт работы</a>
-            <a href="#tab-3" class="tabs__triggers-item">Достижения</a>
-            <a href="#tab-4" class="tabs__triggers-item">Отзывы <span>16</span></a>
+        <div class="doctor-card__tabs tabs">
+          <div class="doctor-card__triggers tabs__triggers">
+            <button class="doctor-card__triggers-item tabs__triggers-item" type="button">
+              Образование</button>
+            <button class="doctor-card__triggers-item tabs__triggers-item" type="button">
+              Опыт работы</button>
+            <button class="doctor-card__triggers-item tabs__triggers-item" type="button">
+              Достижения</button>
+            <button class="doctor-card__triggers-item tabs__triggers-item" type="button">
+              Отзывы <span>16</span>
+            </button>
           </div>
-          <div class="tabs__content">
-            <div class="tabs__content-item" id="tab-1">
+          <div class="doctor-card__content tabs__content">
+            <div class="tabs__content-item">
               <p>В 2004 году окончила Cамарский государственный медицинский университет по специальности «Лечебное
                 дело» (Диплом ВСБ №
                 0723475 от 24.06.2004).</p>
@@ -175,7 +378,7 @@
                 специальности "Акушерство и
                 гинекология", действителен до 13.10.2025.</p>
             </div>
-            <div class="tabs__content-item" id="tab-2">
+            <div class="tabs__content-item">
               <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Выйти вершину
                 своих имени строчка предупредила текст правилами деревни предложения инициал, ручеек бросил буквоград
                 ему всемогущая lorem коварных большого которое рыбного мир несколько осталось своего то власти.
@@ -189,7 +392,7 @@
                 ему всемогущая lorem коварных большого которое рыбного мир несколько осталось своего то власти.
                 Подзаголовок, ее знаках!</p>
             </div>
-            <div class="tabs__content-item" id="tab-3">
+            <div class="tabs__content-item">
               <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Выйти вершину
                 своих имени строчка предупредила текст правилами деревни предложения инициал, ручеек бросил буквоград
                 ему всемогущая lorem коварных большого которое рыбного мир несколько осталось своего то власти.
@@ -207,7 +410,7 @@
                 ему всемогущая lorem коварных большого которое рыбного мир несколько осталось своего то власти.
                 Подзаголовок, ее знаках!</p>
             </div>
-            <div class="tabs__content-item" id="tab-4">
+            <div class="tabs__content-item">
               <p>Hello hello за словесными горами в стране гласных и согласных живут рыбные тексты. Выйти вершину
                 своих имени строчка предупредила текст правилами деревни предложения инициал, ручеек бросил буквоград
                 ему всемогущая lorem коварных большого которое рыбного мир несколько осталось своего то власти.

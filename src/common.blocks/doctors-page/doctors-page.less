@@ -13,21 +13,22 @@
 
   @media screen and (min-width: @tablet-width) {
     display: grid;
-    gap: 40px 48px;
+    gap: 0 48px;
+    align-items: start;
     grid-template-columns: 216px auto;
     grid-template-rows: auto auto;
     grid-template-areas: "area-1 area-2"
-                         "area-3 area-3";
+                         "area-3 area-3"
+                         "area-4 area-4";
   }
 
   @media screen and (min-width: @desktop-width) {
-    display: grid;
-    gap: 48px;
-    grid-template-columns: 216px 378px auto;
-    grid-template-rows: auto;
-    grid-template-areas: "area-1 area-2 area-3";
+    grid-template-columns: 216px auto;
+    grid-template-areas: "col-1 col-2"
+                         "col-1 col-3"
+                         "col-1 col-4";
+                         
   }
-
 
   &__img-wrapper {
     margin: 0 auto 8px;
@@ -39,7 +40,7 @@
     }
 
     @media screen and (min-width: @desktop-width) {
-      grid-area: area-1;
+      grid-area: col-1;
     }
   }
 
@@ -60,14 +61,25 @@
   }
 
   &__container {
+    margin-bottom: 24px;
+
     @media screen and (min-width: @tablet-width) {
       display: flex;
       flex-direction: column;
+      margin: 0;
       padding-top: 1px;
     }
 
     @media screen and (min-width: @desktop-width) {
-      grid-area: area-2;
+      position: relative;
+      grid-area: col-2;
+    }
+
+    .doctor-card__link {
+
+      @media screen and (min-width: @desktop-width) {
+        padding-right: 224px;
+      }
     }
   }
 
@@ -86,16 +98,8 @@
     text-align: center;
 
     @media screen and (min-width: @tablet-width) {
-      margin: 0 0 15px;
+      margin: 0 0 16px;
       text-align: left;
-    }
-  }
-
-  &__location {
-    margin-bottom: 16px;
-
-    @media screen and (min-width: @tablet-width) {
-      justify-content: flex-start;
     }
   }
 
@@ -104,32 +108,50 @@
     text-align: center;
 
     @media screen and (min-width: @tablet-width) {
+      margin-bottom: 24px;
       text-align: left;
     }
   }
 
   &__btn {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 
     @media screen and (min-width: @tablet-width) {
-      width: 128px;
-      margin: 0;
+      width: 200px;
+    }
+
+    
+    @media screen and (min-width: @desktop-width) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-bottom: 0;
     }
   }
 
-  &__reception-hours {
-
+  &__tabs-slogan {
     @media screen and (min-width: @tablet-width) {
       width: 100%;
+      padding-top: 40px;
       grid-area: area-3;
-      padding: 0 16px;
     }
 
     @media screen and (min-width: @desktop-width) {
-      grid-area: area-3;
-      padding-left: 54px;
-      align-self: center;
+      padding-top: 24px;
+      grid-area: col-3;
     }
   }
+
+  &__tabs {
+    @media screen and (min-width: @tablet-width) {
+      width: 100%;
+      grid-area: area-4;
+    }  
+
+    @media screen and (min-width: @desktop-width) {
+      grid-area: col-4;
+    }
+  }
+
 }

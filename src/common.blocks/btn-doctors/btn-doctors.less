@@ -1,0 +1,27 @@
+@import (reference) '../../less/variables.less';
+
+.btn-doctors {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  appearance: none;
+  border-radius: 50px;
+  padding: 16px 21px;
+  font-family: "Ubuntu", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: @color-white;
+  background-color: @color-main;
+  transition: @transition;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @color-main-light;
+  }
+}
